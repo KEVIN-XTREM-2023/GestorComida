@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoinicio"
+    tools:context=".opcionesActivity">
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Restaurante"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtnClientes"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnInicio"
+        app:srcCompat="@drawable/clientesprueba" />
+
+    <ImageButton
+        android:id="@+id/imgbtnInicio"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inicioprueba" />
+
+    <ImageButton
+        android:id="@+id/imgbtnReservas"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnMenu"
+        app:srcCompat="@drawable/menuprueba" />
+
+    <ImageButton
+        android:id="@+id/imgbtnMenu"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reservasprueba" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:text="Inicio"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="117dp"
+        android:text="Menú"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Clientes"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnClientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnInicio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="76dp"
+        android:text="Reservas"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtnReservas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnMenu"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoinicio"
+    tools:context=".registrarUsuarioActivity">
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Registro"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNombresRegistro"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese su nombre"
+
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/mensajeUsuarioRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Nombre es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresRegistro" />
+
+    <EditText
+        android:id="@+id/editApellidoRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="Ingrese su apellido"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeApellidoRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Apellido es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidoRegistro" />
+
+
+    <EditText
+        android:id="@+id/editEmailRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:hint="Ingrese su Email"
+        android:drawableStart="@drawable/correoelectronico"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidoRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeEmailRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Email es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailRegistro" />
+
+    <EditText
+        android:id="@+id/editTelefonoRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:hint="Ingrese su Telefono"
+        android:drawableStart="@drawable/telefono"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeTelefonoRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Telefono es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefonoRegistro" />
+
+    <EditText
+        android:id="@+id/editContrasenaRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:hint="Ingrese su Contraseña"
+        android:drawableStart="@drawable/contrasena"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefonoRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeContraseniaRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Contraseña es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContrasenaRegistro" />
+
+    <Button
+        android:id="@+id/btnEnviarRegistroUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:text="ENVIAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContrasenaRegistro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

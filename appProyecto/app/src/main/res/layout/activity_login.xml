@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".loginActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Inicio sesión"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:textColorHint="@color/black"
+        >
+
+        <EditText
+            android:id="@+id/edittxtUsuario"
+            android:layout_width="215sp"
+            android:layout_height="50sp"
+            android:background="@color/white"
+            android:hint="Usuario"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/mensajeUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="* Usuario es Obligatorio"
+            android:textColor="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUser"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black"
+        >
+
+        <EditText
+            android:id="@+id/edittxtcontrasenia"
+            android:layout_width="215sp"
+            android:layout_height="50sp"
+            android:background="@color/white"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/mensajeContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="* Contraseña es Obligatoria"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

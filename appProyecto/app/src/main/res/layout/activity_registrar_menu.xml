@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoinicio"
+    tools:context=".registrarMenuActivity">
+
+    <TextView
+
+        android:id="@+id/textViewTituloRegMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Registro"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNombresMenuRegistro"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese nombre del Menú"
+
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloRegMenu" />
+
+    <TextView
+        android:id="@+id/mensajeNombreMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Nombre es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresMenuRegistro" />
+
+    <EditText
+        android:id="@+id/editDetalleMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="Ingrese Detalle del Menú"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresMenuRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeDetalleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Detalle es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDetalleMenu" />
+
+
+    <EditText
+        android:id="@+id/editPrecioMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese Precio del Menú"
+        android:drawableStart="@drawable/correoelectronico"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDetalleMenu" />
+
+    <TextView
+        android:id="@+id/mensajePrecioMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Precio es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrecioMenu" />
+
+
+    <Button
+        android:id="@+id/btnEnviarRegistroMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="ENVIAR"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrecioMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

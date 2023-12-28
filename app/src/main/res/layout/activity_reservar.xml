@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoinicio"
+    tools:context=".ReservarActivity">
+
+    <TextView
+
+        android:id="@+id/textViewTituloRegMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Registro Reserva"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNombresRecervaRegistro"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese nombre del Menú"
+        android:enabled="false"
+        android:drawableStart="@drawable/menuicon"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloRegMenu" />
+
+    <TextView
+        android:id="@+id/mensajeNombreReservasRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Nombre es Obligatorio"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresRecervaRegistro" />
+
+    <EditText
+        android:id="@+id/editCantidadReservaRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:hint="Ingrese Cantidad"
+        android:drawableStart="@drawable/cuchara"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombresRecervaRegistro" />
+
+    <TextView
+        android:id="@+id/mensajeCantidadReservaRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="* Cantidad es Obligatoria"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCantidadReservaRegistro" />
+
+
+    <Button
+        android:id="@+id/btnEnviarRegistroMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:text="ENVIAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCantidadReservaRegistro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
